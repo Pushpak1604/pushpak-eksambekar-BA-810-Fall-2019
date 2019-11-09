@@ -22,7 +22,7 @@ it('it should GET the index.html file', (done) => {
         });
 });
 
-/*it('it should return 404', (done) => {
+it('it should return 404', (done) => {
     chai.request(server).get('/index2.html')
         .end((err, res) => {
             res.should.have.status(404);
@@ -336,4 +336,4 @@ describe('ToDos', () => {
         });
     });
 
-});*/
+});
