@@ -30,6 +30,7 @@ newTodo(id){
       }
 
     async getTodos(userid) {
+            this.todosArray = [];
             let url = this.TODO_SERVICE + '/user/' + userid;
             let response = await this.data.get(url);
             if (!response.error) {

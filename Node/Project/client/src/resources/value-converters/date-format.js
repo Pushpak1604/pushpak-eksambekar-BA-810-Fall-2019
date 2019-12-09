@@ -1,6 +1,4 @@
 import moment from 'moment';
-
-
 export class DateFormatValueConverter {
     toView(value) {
         if (value === undefined || value === null) {
@@ -10,4 +8,4 @@ export class DateFormatValueConverter {
 
         return dateFormatted;
     }
-}
+}  

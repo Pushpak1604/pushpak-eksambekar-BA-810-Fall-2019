@@ -58,7 +58,7 @@ module.exports = function (app, config) {
 
         logger.log('info', 'Get all user todos', req.params.id);
 
-        var query = Todo.find()
+        var query = Todo.find({userid:req.params.id})
 
             .sort(req.query.order)
 
