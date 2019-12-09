@@ -52,9 +52,5 @@ export class NavBar {
         this.router.navigate('users');
     }
 
-    Vendor(){
-        this.router.navigate('vendors');
-    }
-
 
 }

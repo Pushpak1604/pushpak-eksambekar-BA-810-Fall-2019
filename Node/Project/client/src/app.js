@@ -4,7 +4,7 @@ export class App {
   configureRouter(config, router) {
     this.router = router;
      config.addPipelineStep('authorize', AuthorizeStep); 
-    config.title = 'Vendors List';
+    config.title = 'Things ToDo';
     config.map([
       {
         route: ['', 'home'],
@@ -17,15 +17,15 @@ export class App {
         route: 'users',
         name: 'users',
         moduleId: 'modules/users',
-        title: 'Users'
+        title: 'Users',
         //auth: true
 
       },
       {
-        route: 'vendors',
-        name: 'vendors',
-        moduleId: 'modules/vendors',
-        title: 'Vendors',
+        route: 'todos',
+        name: 'todos',
+        moduleId: 'modules/todos',
+        title: 'Todos',
         auth: true
       }
     ]);

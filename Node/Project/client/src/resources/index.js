@@ -3,6 +3,6 @@ export function configure(config) {
     './elements/nav-bar', 
     './elements/flat-picker/flat-picker',
     './value-converters/date-format',
-    './value-converters/filter-vendors'
+    './value-converters/filter-todos'
   ]);
 }
